@@ -10,21 +10,20 @@ html, body{
     top: 0;
     left: 0;
 }
-a{
+a {
     text-decoration: none;
-    color: rgba(34,54,69,0.7);
+    color: rgba(150, 56, 56, 0.781);
     font-weight: 500;
 }
 a:hover {
-    color: #e04e3d;
+    font-weight: 600;
 }
 ul{
     list-style-type: none;
 }
 .navbar{
-    background: white;
     padding: 3rem 2rem;
-    height: 0rem;
+    height: 0;
     min-height: 12vh;
 }
 .navbar .navbar-brand a{
@@ -67,17 +66,42 @@ ul{
 .navbar-expand-lg .navbar-nav .nav-link:hover{
     border-bottom: 2px solid #e04e3d;
 }
-.navbar-nav button{
-    padding: 1.2rem 0;
+/*.navbar-nav button{
+    padding: 1.2em 1rem;
 }
 .navbar-nav .btn{
     background-color: #e04e3d;
     color: white;
     border-radius: 0;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    margin-top: -10px;
 }
 .navbar-nav .btn:hover{
     background-color: #173d69;
+}*/
+.btn-w a{
+    background-color: #e04e3d;
+    color: white;
+    padding: 1.2rem 1rem;
+}
+.btn-w a:hover {
+    background-color: #173d69;
+}
+.bgimg {
+    background:rgba(0,0,0,.4)url("./images/bghero.jpeg") no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+@media (max-width: 768px) {
+    .navbar .navbar-nav a{
+        background-color: #e04e3d;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover{
+        border-bottom: 2px solid #fff;
+    }
+    .bgimg{
+        max-width: 100%;
+        height: auto;
+    }
+    h1{
+        font-size: calc(.5rem + 3.3vw);
+    }
 }
