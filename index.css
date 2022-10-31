@@ -23,6 +23,7 @@ ul{
 }
 .navbar{
     padding: 3rem 2rem;
+    background-color: black;
     height: 0;
     min-height: 12vh;
 }
@@ -90,6 +91,60 @@ ul{
     background-size: cover;
     background-blend-mode: darken;
 }
+/*Timeline and Education*/
+
+.timeline{
+    border-left: 1px dashed;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.timeline .timeline-box{
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.timeline-icon{
+    left: -18px;
+    top: 0;
+    background-color: #173d69;
+    position: absolute;
+    width: 35px;
+    text-align: center;
+    line-height: 30px;
+}
+.timeline-icon i{
+    color: white;
+}
+.timeline .timeline-icon:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: #173d69;
+    margin: -4px;
+}
+/*Services Section codes*/
+.section-padding{
+    padding: 10px 0;
+}
+.section-header{
+    margin-bottom: 50px;
+}
+.section-header h2{
+    color: #e04e3d;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.single-service{
+    text-align: center;
+    transition: .5s;
+    height: 350px;
+    padding: 115px 50px;
+}
+
 @media (max-width: 768px) {
     .navbar .navbar-nav a{
         background-color: #e04e3d;
